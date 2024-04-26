@@ -12,7 +12,7 @@ public class ApiConectar {
     // → Variáveis Para Capturar Os Valores Do Endereço da URL e Chave API
     // → Definida Como Privada e Como Se Fosse Uma Constante
     private static final String API_KEY = "40bdeba90e39d275eb1c0b0d";
-    private static final String API_BASE_URL = "https://v6.exchangerate-api.com/v6/40bdeba90e39d275eb1c0b0d/latest/USD";
+    private static final String API_BASE_URL = "https://v6.exchangerate-api.com/v6/";
 
     public static JsonObject getExchangeRates(String baseCurrency) throws IOException {
         String apiUrl = API_BASE_URL + API_KEY + "/latest/" + baseCurrency;
